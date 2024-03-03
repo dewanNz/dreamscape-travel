@@ -281,6 +281,22 @@ ul li {
   margin-bottom: 10px;
 }
 
+/* footer style */
+.footer {
+  margin-top: 50px;
+  background: rgba(19, 19, 24, 0.05);
+  text-align: center;
+  padding: 100px 300px;
+}
+.footer-heading {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.footer span {
+  margin: 10px;
+}
 /* Resposive design for small device */
 @media screen and (max-width: 600px) {
   header,
@@ -317,5 +333,9 @@ ul li {
 
   .perfect-palce img {
     width: 100%;
+  }
+
+  .footer {
+    padding: 50px 120px;
   }
 }
