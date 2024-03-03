@@ -115,6 +115,27 @@ select {
   padding: 20px;
 }
 
+/* Destination section style */
+.destination-info {
+  text-align: center;
+}
+
+.destination-img {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.destination-img-info {
+  position: relative;
+}
+.destination-img-info p {
+  position: absolute;
+  top: 100px;
+  right: 190px;
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: #ffffff;
+}
 /* popular-tour section style */
 .popular-tour {
   display: flex;
@@ -129,12 +150,119 @@ select {
   margin-top: 50px;
   margin-bottom: 30px;
 }
+
+/* Choose section title */
+.choose-title {
+  text-align: center;
+}
+.choose-decription {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+.choose-decription-info {
+  width: 45%;
+  height: 45%;
+  box-sizing: border-box;
+  border-radius: 16px;
+  padding: 32px;
+  margin-bottom: 10px;
+}
+.choose-decription-info h4 {
+  color: #131318;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.cdi-one {
+  border: 1px solid rgba(251, 181, 99, 0.2);
+  background: rgba(251, 181, 99, 0.05);
+}
+.cdi-two {
+  border: 1px solid rgba(41, 206, 246, 0.2);
+  background: rgba(41, 206, 246, 0.05);
+}
+.cdi-three {
+  border: 1px solid rgba(233, 68, 68, 0.2);
+  background: rgba(233, 68, 68, 0.05);
+}
+.choose-decription-info img {
+  width: 64px;
+  height: 64px;
+}
+
+/* Discounts section style */
+
+.discounts-title {
+  text-align: center;
+}
+.discounts-title p {
+  margin-bottom: 50px;
+}
+.discounts-banner {
+  position: relative;
+}
+.discounts-banner img {
+  width: 100%;
+  margin-top: 20px;
+}
+.discounts-details {
+  width: 550px;
+  height: 380px;
+  position: absolute;
+  bottom: 60px;
+  left: 550px;
+  z-index: 5;
+  padding: 25px;
+  box-sizing: border-box;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 16px;
+  backdrop-filter: blur(5px);
+  background: rgba(255, 255, 255, 0.8);
+}
+.dd-two {
+  left: 60px;
+}
+.discounts-icon {
+  display: flex;
+  gap: 10px;
+}
+
+.discounts-details h4 {
+  color: #131318;
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
 /* Resposive design for small device */
 @media screen and (max-width: 600px) {
   header,
   #search-box,
-  .popular-tour {
+  .popular-tour,
+  .choose-decription,
+  .destination-img {
     flex-direction: column;
     /* align-items: center; */
+  }
+
+  .choose-decription-info {
+    width: 100%;
+    height: 100%;
+  }
+
+  .destination-img-info img {
+    width: 90%;
+  }
+
+  .discounts-details {
+    width: 300px;
+    height: 300px;
+    bottom: 10px;
+    left: 150px;
+
+    padding: 5px;
   }
 }
