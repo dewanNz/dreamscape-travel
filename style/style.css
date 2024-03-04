@@ -360,7 +360,8 @@ p {
   #search-box,
   .popular-tour,
   .choose-decription,
-  .destination-img {
+  .destination-img,
+  .mobile-app {
     flex-direction: column;
     /* align-items: center; */
   }
@@ -394,5 +395,8 @@ p {
 
   .footer {
     padding: 50px 120px;
+  }
+  .mobile-app-details {
+    width: auto;
   }
 }
